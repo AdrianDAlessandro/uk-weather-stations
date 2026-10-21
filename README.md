@@ -6,14 +6,12 @@ This repository is the starting point for the Cleaning Weather Station Records p
 
 ## Quickstart
 
-Open a Codespace with the button above, which has everything set up already. Or, with Python 3.10 or later and Git:
+Open a Codespace with the button above, which has everything set up already. Or, with Rust and Cargo installed through [rustup](https://rustup.rs/), and Git:
 
 ```bash
 git clone https://github.com/ImperialCollegeLondon/uk-weather-stations.git
 cd uk-weather-stations
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e ".[dev]"
+cargo run
 ```
 
 ## Data

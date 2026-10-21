@@ -1,0 +1,8 @@
+[package]
+name = "uk-weather-stations"
+version = "0.1.0"
+edition = "2024"
+description = "Read and clean UK weather station records"
+license = "OGL-UK-3.0"
+
+[dependencies]

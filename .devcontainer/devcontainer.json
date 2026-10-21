@@ -1,6 +1,6 @@
 {
   "name": "uk-weather-stations",
-  "image": "python:3.13-slim",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": false,
@@ -11,13 +11,12 @@
     },
     "ghcr.io/devcontainers/features/copilot-cli:1": {}
   },
-  "postCreateCommand": "pip install --no-cache-dir -e '.[dev]'",
+  "postCreateCommand": "cargo check",
   "customizations": {
     "vscode": {
       "extensions": [
         "GitHub.copilot-chat",
-        "ms-python.python",
-        "ms-toolsai.jupyter"
+        "rust-lang.rust-analyzer"
       ]
     }
   }
